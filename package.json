@@ -14,9 +14,11 @@
     "static-eval": "^1.1.1",
     "underscore": "^1.8.3"
   },
-  "browser": "./jsonpath.js",
-  "alias": {
-    "./lib/aesprim.js": "./generated/aesprim-browser.js"
+  "browser": {
+    "./lib/aesprim.js": "./generated/aesprim-browser.js",
+    "fs": false,
+    "os": false,
+    "path": false
   },
   "devDependencies": {
     "grunt": "0.4.5",
